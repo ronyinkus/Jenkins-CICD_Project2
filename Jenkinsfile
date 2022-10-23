@@ -53,7 +53,7 @@ pipeline {
     }
     stage('Upload to Artifactory') {
       steps {
-        sh "mvn clean deploy -DskipTests"
+        sh "mvn clean deploy-DskipTests"
       }
     }
     stage('Deploy to DEV') {
